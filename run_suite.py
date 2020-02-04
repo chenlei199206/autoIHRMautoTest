@@ -10,7 +10,8 @@ suite = unittest.TestSuite()
 # 组装测试套件
 suite.addTest(unittest.makeSuite(LoginTest))
 # 指定测试报告的地址和格式
-report_path = app.BASH_DIR + "/report/ihrm-{}.html".format(time.strftime("%Y%m%d %H%M%S"))
+# report_path = app.BASH_DIR + "/report/ihrm-{}.html".format(time.strftime("%Y%m%d %H%M%S"))
+report_path = app.BASH_DIR + "/report/ihrm.html"
 
 # 运行测试套件
 with open(report_path, "wb")as f:
